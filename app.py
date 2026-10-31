@@ -6,7 +6,7 @@ import os
 app = Flask(__name__)
 CORS(app)
 
-FILE_PATH = "data.txt"
+FILE_PATH = "/app/data/data.txt"
 
 @app.route('/api/send-season', methods=['POST'])
 def receive_season():
